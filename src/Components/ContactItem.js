@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-function ContactItem({ title, icon, contact, ...props }) {
+function ContactItem({ title, icon, ...props }) {
   return (
     <ContactItemStyled>
       <div className="left-content">{icon}</div>
       <div className="right-content">
         <h6>{title}</h6>
         <p>
-          {props.email && (
-            <a href="mailto:">Send Email</a>
-          )}
+          {props.phone && <a href={`tel:${props.phone}`}>{props.phone}</a>}
+          {props.email && <a href={`mailto:${props.email}`}>{props.email}</a>}
+          {props.contact && props.contact}
         </p>
       </div>
     </ContactItemStyled>

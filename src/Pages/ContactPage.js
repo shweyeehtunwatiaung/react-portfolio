@@ -44,30 +44,21 @@ function ContactPage() {
                 ></textarea>
               </div>
               <div className="form-field f-button">
-                <PrimaryButton>
-                  <a href="mailto:shweyeehtunwatiaung@gmail.com">Send Email</a>
-                </PrimaryButton>
+                <PrimaryButton>Send Email</PrimaryButton>
               </div>
             </form>
           </div>
           <div className="right-content">
-            <ContactItem
-              title={"Phone"}
-              icon={phone}
-              cont1={"+66-789675637"}
-              cont2={"07663520283"}
-            />
+            <ContactItem title={"Phone"} icon={phone} phone={"+66-789675637"} />
             <ContactItem
               title={"Email"}
               icon={email}
-              cont1={"loremipsum@gmail.com"}
-              cont2={"info.lorem.ipsum@gmail.com"}
+              email={"shweyeehtunwatiaung@gmail.com"}
             />
             <ContactItem
               title={"Address"}
               icon={location}
-              cont1={"27 Aldrich Road, London, England"}
-              cont2={"United Kingdom"}
+              contact={"27 Aldrich Road, London, England"}
             />
           </div>
         </InnerLayout>
