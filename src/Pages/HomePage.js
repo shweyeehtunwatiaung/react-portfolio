@@ -1,23 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import FacebookIcon from "@material-ui/icons/Facebook";
 import GithubIcon from "@material-ui/icons/GitHub";
-import YoutubeIcon from "@material-ui/icons/YouTube";
-// import Particle from '../Components/Particle';
-import business from "../img/vd/marketing.mp4";
 import Modal from "../Components/Modal";
-import Button from "@material-ui/core/Button";
 import { useSelector, useDispatch } from "react-redux";
 import { emit } from "../store/emit.action";
 
 const HomePage = () => {
-  const [modalValue, setModalValue] = useState();
   const { isModal, modalApi_data } = useSelector((state) => state.emitReducer);
   const dispatch = useDispatch();
 
-  const handleClickOpen = () => {
-    dispatch(emit("IS_MODAL", true));
-  };
+  // const handleClickOpen = () => {
+  //   dispatch(emit("IS_MODAL", true));
+  // };
 
   const handleClose = () => {
     dispatch(emit("IS_MODAL", !isModal));

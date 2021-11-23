@@ -5,7 +5,6 @@ import Title from "../Components/Title";
 import { MainLayout } from "../styles/Layouts";
 import ServicesSection from "../Components/ServicesSection";
 import ReviewsSection from "../Components/ReviewsSetion";
-import { Button } from "@material-ui/core";
 import { emit } from "../store/emit.action";
 import { useSelector, useDispatch } from "react-redux";
 import Modal from "../Components/Modal";
@@ -14,9 +13,9 @@ const AboutPage = () => {
   const { isModal, modalApi_data } = useSelector((state) => state.emitReducer);
   const dispatch = useDispatch();
 
-  const handleClickOpen = () => {
-    dispatch(emit("IS_MODAL", true));
-  };
+  // const handleClickOpen = () => {
+  //   dispatch(emit("IS_MODAL", true));
+  // };
 
   const handleClose = () => {
     dispatch(emit("IS_MODAL", !isModal));

@@ -1,10 +1,10 @@
 import AboutPage from "../Pages/AboutPage";
 import ContactPage from "../Pages/ContactPage";
 import HomePage from "../Pages/HomePage";
-import PortfoliosPage from "../Pages/PortfoliosPage";
+// import PortfoliosPage from "../Pages/PortfoliosPage";
 import ResumePage from "../Pages/ResumePage";
 import NotFound from "../Pages/ResumePage";
-import BlogsPage from '../Pages/BlogsPage'
+// import BlogsPage from '../Pages/BlogsPage'
 
 const Routes = [
   {
