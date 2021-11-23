@@ -29,13 +29,15 @@ function ImageSection() {
           <div className="info">
             <p>: Shwe Yee</p>
             <p>: shweyeehtunwatiaung@gmail.com </p>
-            <p>
-              :  Yangon.
-            </p>
+            <p>: Yangon.</p>
             <p>: 09-769095669</p>
           </div>
         </div>
-        <PrimaryButton title={"Download Cv"} />
+        <PrimaryButton>
+          <a download href={require("../img/cv.pdf").default}>
+            Download CV
+          </a>
+        </PrimaryButton>
       </div>
     </ImageSectionStyled>
   );

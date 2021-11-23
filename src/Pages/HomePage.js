@@ -43,22 +43,11 @@ const HomePage = () => {
             Home
           </Button> */}
           <h1>
-            Hi, I'm <span>Lorem Ipsum</span>
+            <span>Welcome from my site</span>
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil
-            voluptates ea dolore vel repellat? Quia tenetur non quam
-            exercitationem. Lorem ipsum dolor sit amet.
-          </p>
           <div className="icons">
-            <a href="https://codepen.io/pen/" className="icon i-facebook">
-              <FacebookIcon />
-            </a>
-            <a href="https://codepen.io/pen/" className="icon i-github">
+            <a href="https://github.com/shweyeehtunwatiaung/" target="_blank" rel="noreferrer" className="icon i-github">
               <GithubIcon />
-            </a>
-            <a href="https://codepen.io/pen/" className="icon i-youtube">
-              <YoutubeIcon />
             </a>
           </div>
         </div>

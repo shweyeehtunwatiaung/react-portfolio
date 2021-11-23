@@ -1,13 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-function PrimaryButton({ title }) {
+function PrimaryButton({ children }) {
   return (
     <PrimaryButtonStyled>
-      <a download target="_blank" href="/cv.pdf">
-        {" "}
-        {title}{" "}
-      </a>
+      {children}
     </PrimaryButtonStyled>
   );
 }
