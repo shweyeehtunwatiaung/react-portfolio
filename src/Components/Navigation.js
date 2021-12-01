@@ -43,7 +43,7 @@ function Navigation() {
       </ul>
       <footer className="footer">
         <p>
-          @2021 <b>Lorem Ipsum</b>
+          @2021 <b>created by SY</b>
         </p>
       </footer>
     </NavigationStyled>
